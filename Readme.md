@@ -1,15 +1,20 @@
 <!-- default badges list -->
-![](https://img.shields.io/endpoint?url=https://codecentral.devexpress.com/api/v1/VersionRange/128608357/21.1.5%2B)
 [![](https://img.shields.io/badge/Open_in_DevExpress_Support_Center-FF7200?style=flat-square&logo=DevExpress&logoColor=white)](https://supportcenter.devexpress.com/ticket/details/E3862)
 [![](https://img.shields.io/badge/📖_How_to_use_DevExpress_Examples-e9f6fc?style=flat-square)](https://docs.devexpress.com/GeneralInformation/403183)
 <!-- default badges end -->
-<!-- default file list -->
-*Files to look at*:
-* [MainWindow.xaml.cs](./CS/RichEditDocumentServer_Print/MainWindow.xaml.cs) (VB: [MainWindow.xaml.vb](./VB/RichEditDocumentServer_Print/MainWindow.xaml.vb))
-<!-- default file list end -->
+
 # Word Processing Document API - Print Fixed Documents in WPF Application
 
-<p>This example utilizes the <a href="https://documentation.devexpress.com/WPF/DevExpress.XtraRichEdit.Printing.XpfRichEditPrinter.class">DevExpress.XtraRichEdit.Printing.XpfRichEditPrinter</a> descendant to print the document loaded into the <a href="http://documentation.devexpress.com/#CoreLibraries/clsDevExpressXtraRichEditRichEditDocumentServertopic"><u>RichEditDocumentServer</u></a> instance. A custom method iterates all available printers and chooses the one that contains a word "Canon" in its name.</p>
-<p>Starting from v2014 vol.1.8 (and also v2013 starting from vol.2.12) the <a href="https://documentation.devexpress.com/WPF/DevExpress.XtraRichEdit.Printing.XpfRichEditPrinter.class">DevExpress.XtraRichEdit.Printing.XpfRichEditPrinter</a> class is not capable of creating fixed documents from the <a href="http://documentation.devexpress.com/#CoreLibraries/clsDevExpressXtraRichEditRichEditDocumentServertopic"><u>RichEditDocumentServer</u></a> instance. A new class <a href="https://documentation.devexpress.com/WPF/DevExpress.Xpf.RichEdit.RichEditDocumentXpfPrinter.class">RichEditDocumentXpfPrinter</a> should be used instead. The updated example utilizes the <a href="https://documentation.devexpress.com/WPF/DevExpress.Xpf.RichEdit.RichEditDocumentXpfPrinter.CreateFixedDocument.method">RichEditDocumentXpfPrinter.CreateFixedDocument</a> method to create a fixed document.</p>
+This example demonstrates how to use the [RichEditDocumentXpfPrinter.CreateFixedDocument](https://docs.devexpress.com/WPF/DevExpress.Xpf.RichEdit.RichEditDocumentXpfPrinter.CreateFixedDocument(DevExpress.XtraRichEdit.IRichEditDocumentServer)) method to create a [fixed document](https://docs.microsoft.com/en-us/dotnet/api/system.windows.documents.fixeddocument) from a document loaded to the Word Processing Document API. A custom method iterates all available printers, chooses the printer that contains "Canon" in its name, and invokes the [PrintDialog](https://docs.microsoft.com/en-us/dotnet/api/system.windows.controls.printdialog) to print the document.
 
-<br/>
+> You need a license for the [DevExpress Office File API Subscription](https://www.devexpress.com/products/net/office-file-api/) or [DevExpress Universal Subscription](https://www.devexpress.com/subscriptions/universal.xml) to use this library in production code. 
+
+<!-- default file list -->
+## Files to Look At
+
+[MainWindow.xaml.cs](./CS/RichEditDocumentServer_Print/MainWindow.xaml.cs) (VB: [MainWindow.xaml.vb](./VB/RichEditDocumentServer_Print/MainWindow.xaml.vb))
+<!-- default file list end -->
+
+## Documentation
+
+[Printing](https://docs.devexpress.com/OfficeFileAPI/17580/word-processing-document-api/printing#richeditdocumentxpfprinter-wpf)
