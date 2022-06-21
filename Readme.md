@@ -18,4 +18,4 @@ This example demonstrates how to use the [RichEditDocumentXpfPrinter.CreateFixed
 
 ## Documentation
 
-[Printing](https://docs.devexpress.com/OfficeFileAPI/17580/word-processing-document-api/printing#richeditdocumentxpfprinter-wpf)
+[Printing](https://docs.devexpress.com/OfficeFileAPI/17580/word-processing-document-api/printing)
